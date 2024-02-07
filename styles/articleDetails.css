@@ -1,0 +1,115 @@
+.article-author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: row;
+}
+
+
+.favorite-button {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.favorite-button.active {
+    color: #f00;
+}
+
+:root {
+    --color: #3c3163;
+    --transition-time: 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    background: #fafafa;
+    display: flex;
+    justify-content: center
+}
+
+a {
+    color: inherit;
+}
+
+.cardPage {
+    position: relative;
+    font-family: 'Heebo';
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)),
+            rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+    height: 100vh;
+    width: 80%;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform var(--transition-time) ease;
+    will-change: transform;
+}
+
+.card-info-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title-page {
+    text-transform: capitalize;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1;
+
+}
+
+.card-title-page:hover {
+    text-decoration: underline;
+}
+
+.card-content-page {
+    flex: 1;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2;
+    opacity: 0.8;
+    font-size: 20px;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: auto;
+}
+
+
+.card-date-page {
+    margin: 0;
+    font-size: 0.8em;
+    opacity: 0.6;
+    font-size: 15px;
+    color: #666;
+}
